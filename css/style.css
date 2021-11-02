@@ -1,0 +1,43 @@
+/*General settings*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+/*Header*/
+.toolbar {
+  background-color: white;
+  text-align: center;
+  padding: 16px;
+  margin-bottom: 50px;
+}
+
+/*Main*/
+.wrap-grid h2 {
+  text-align: center;
+}
+
+/*Classi da usare nel Grid*/
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+  margin: 60px auto;
+  border: 2px solid white;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: calc(100% / 8);
+  height: calc(100% / 8); */
+  border: 2px solid white;
+  cursor: pointer;
+}
