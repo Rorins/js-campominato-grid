@@ -71,6 +71,7 @@ function squareGen(num,cells){
     //span per numero generato
     const span = document.createElement("div");
     span.append(num);
+   
 
     //Inserisco lo span nello square
     node.append(span);

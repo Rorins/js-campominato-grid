@@ -44,3 +44,9 @@ body {
 .clicked {
   background-color: #6495ed;
 }
+
+/*Footer*/
+footer {
+  background-color: white;
+  padding: 16px;
+}
