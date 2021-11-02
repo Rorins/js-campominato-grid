@@ -45,6 +45,13 @@ setDimens.addEventListener("click", () =>{
         
         // Generiamo i quadrati
         const square = squareGen(i,cellsPerSide);
+
+        // Al click cambia colore
+        square.addEventListener("click",function() {
+            square.classList.add("clicked")
+        }
+        )
+
         grid.append(square)
     }
     

@@ -12,9 +12,11 @@ body {
 /*Header*/
 .toolbar {
   background-color: white;
-  text-align: center;
   padding: 16px;
   margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*Main*/
@@ -29,16 +31,16 @@ body {
   width: 500px;
   height: 500px;
   margin: 60px auto;
-  border: 2px solid white;
+  border: 2px solid black;
 }
 
 .square {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid white;
+  border: 2px solid black;
   cursor: pointer;
 }
-.cliccked {
-  background-color: blue;
+.clicked {
+  background-color: #6495ed;
 }
