@@ -19,6 +19,15 @@ body {
   align-items: center;
 }
 
+header div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  padding-left: 20px;
+}
 /*Main*/
 .wrap-grid h2 {
   text-align: center;
@@ -43,10 +52,14 @@ body {
 }
 .clicked {
   background-color: #6495ed;
+  color: white;
 }
 
 /*Footer*/
 footer {
   background-color: white;
   padding: 16px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
