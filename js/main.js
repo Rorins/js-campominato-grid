@@ -15,7 +15,6 @@ setDimens.addEventListener("click", () =>{
     wrapGrid.innerHTML = "";
     //Creiamo una variabile per prendere il valore attuale del nostro dimensLevel
     const gridDimens = dimensLevel.value;
-    console.log(gridDimens);
 
     //Facciamo un if statement per cambiare dimensioni nei vari casi
     let cellsNumber;
@@ -34,6 +33,40 @@ setDimens.addEventListener("click", () =>{
             cellsNumber =49;
             cellsPerSide = 7;    
     }
-    console.log(cellsNumber)
-    console.log(cellsPerSide)
+
+    // Generiamo griglia generale creando un div con la classe grid
+    const grid = document.createElement("div");
+    grid.classList.add("grid");
+
+   
+
+    //Generiamo i nostri quadrati
+    for(let i = 1; i <= cellsNumber; i++){
+        
+        // Generiamo i quadrati
+        const square = squareGen(i,cellsPerSide);
+        grid.append(square)
+    }
+    
+     //Inseriamo il Grid nel wrap-grid
+     wrapGrid.append(grid);
 })
+
+
+//Funzione generatore di quadrati con numero
+function squareGen(num,cells){
+    const node = document.createElement("div");
+    //aggiungo classe square e stili per dimensioni
+    node.classList.add("square");
+    node.style.width = ` calc(100% /${cells}` ;
+    node.style.height = ` calc(100% /${cells}` ;
+
+    //span per numero generato
+    const span = document.createElement("div");
+    span.append(num);
+
+    //Inserisco lo span nello square
+    node.append(span);
+
+    return node;
+}
